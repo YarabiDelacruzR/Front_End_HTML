@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Pedidos</title>
+    </head>
+    <body style="background-color: rgb(188, 241, 224);"> 
+        <img src="./Img/Pastelicious.PNG" alt="Pastelicious" width="1350px" height="450">
+        <div style="text-align-last: center;">
+            <h1 style="color: rgb(175, 86, 187);">Pedidos</h1>
+        </div>
+        <a href="./Pastelicious.html">
+            <input type="button" value="Regresar" style="font-size: larger; color: rgb(175, 86, 187);"><br><br>
+        </a>
+        <br><br>
+
+        <form action="./Pedido.js">
+            <label for="Nombre">Ingresa tu Nombre</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+            <br><br>
+            <label for="tel1">Número de Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="5512345678">
+            <br><br>
+            <label for="correo1">Correo Electronico</label><br>
+            <input type="email" id="correo1" name="correo1" placeholder="correo@mail.com">
+            <br><br>
+            <p>¿Recoger en tienda o entrega a domicilio?</p>
+            <input type="radio" id="aqui" name="aqui_llevar" value="Aqui">
+            <label for="aqui">Recoger en tienda</label><br>
+            <input type="radio" id="llevar" name="aqui_llevar" value="Llevar">
+            <label for="llevar">Entrega a Domicilio</label><br>
+            <p>Ingresa Dirección:</p>
+            <input type="text" id="Input1" name="Input1" value="" placeholder="Dirección">
+            <br><br>
+            <label for="fecha1">Fecha y Horario de entrega</label><br>
+            <input type="datetime-local" id="fecha2" name="fecha2"><br>
+
+            <p>Seleccionar Sabor del Pan:</p>
+            <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+            <label for="Chocolate">Pan de Chocolate</label>
+            <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+            <label for="vainilla">Pan de Vainilla</label><br>
+        
+            <p>Seleccionar Relleno del Pastel (Máximo 2):</p>
+            <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+            <label for="topping1">Relleno de Fresa</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+            <label for="topping2">Relleno de Durazno</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Frutas">
+            <label for="topping3">Relleno de Chocolate</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Frutas">
+            <label for="topping4">Relleno de Crema</label><br>
+
+            <p>Seleccionar la Decoración (Máximo 3):</p>
+            <input type="checkbox" id="Flores_comestibles" name="Flores_comestibles" value="Flores_comestibles">
+            <label for="Flores_comestibles">Flores Comestibles</label> <br>
+            <input type="checkbox" id="Granillo_Chocolate" name="Granillo_Chocolate" value="Granillo_Chocolate">
+            <label for="Granillo_Chocolate">Granillo de Chocolate</label><br>
+            <input type="checkbox" id="Granillo_Colores" name="Granillo_Colores" value="Granillo_Colores">
+            <label for="Granillo_Colores">Granillo de Colores</label><br>
+            <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+            <label for="Chocolate">Chocolate</label><br>
+            <input type="checkbox" id="Frutas_temporada" name="Frutas_temporada" value="Frutas_temporada">
+            <label for="Frutas_temporada">Frutas de Temporada</label><br>
+            <input type="checkbox" id="Sparkles_luminosas" name="Sparkles_luminosas" value="Sparkles_luminosas">
+            <label for="Sparkles_luminosas">Sparkles Luminosas</label><br>
+
+            <br><br>
+            <input style="font-size: x-large; color: rgb(55, 173, 202);" type="reset">
+            <input style="font-size: x-large; color: rgb(55, 173, 202);" type="submit">
+            
+            
+            <br><br>
+        </form>
+    </body>
+</html>
